@@ -10,6 +10,8 @@ import {
   Star,
   Code,
   Zap,
+  Database,
+  
 } from "lucide-react";
 import { useState } from "react";
 
@@ -233,13 +235,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {[
               {
-                icon: "<>",
+                icon: <Database size={24} />,
                 title: "FRONTEND",
                 skills: "React, TypeScript, Next.js, Tailwind CSS",
                 desc: "Building responsive and interactive user interfaces",
               },
               {
-                icon: "⊞",
+                icon: "",
                 title: "BACKEND",
                 skills: "Node.js, Express.js, MongoDB",
                 desc: "Scalable server-side applications and APIs",
