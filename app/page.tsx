@@ -31,8 +31,8 @@ export default function Home() {
 
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/Victor-Jack-CV.pdf"; // CV file in public folder
-    link.download = "Victor-Jack-CV.pdf";
+    link.href = "/AGUGBUE-IKENNA-FULLSTACK.pdf"; // CV file in public folder
+    link.download = "AGUGBUE-IKENNA-FULLSTACK.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -562,7 +562,7 @@ export default function Home() {
 
           <div className="border-t-2 border-gray-300 pt-6 md:pt-8">
             <p className="text-gray-600 text-xs md:text-sm retro-text">
-              © 2025 Agugbu Nzubechi. All rights reserved.
+              © 2025 Agugbue Nzubechi. All rights reserved.
             </p>
           </div>
         </div>
