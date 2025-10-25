@@ -240,13 +240,13 @@ export default function Home() {
               {
                 icon: <Code2 size={24} />,
                 title: "FRONTEND",
-                skills: "React, TypeScript, Next.js, Tailwind CSS",
+                skills: "React, TypeScript, Next.js, Tailwind CSS, Redux, Zustand",
                 desc: "Building responsive and interactive user interfaces",
               },
               {
                 icon: <Database size={24} />,
                 title: "BACKEND",
-                skills: "Node.js, Express.js, MongoDB",
+                skills: "Node.js, Express.js, MongoDB, MySQL, RESTful APIs, Firebase, Supabase",
                 desc: "Scalable server-side applications and APIs",
               },
               {
@@ -258,7 +258,7 @@ export default function Home() {
               {
                 icon: <Globe size={24} />,
                 title: "DEPLOYMENT",
-                skills: "Docker, Vercel, CI/CD",
+                skills: "Render, Netlify, Vercel, CI/CD",
                 desc: "Automated deployment and cloud infrastructure",
               },
             ].map((skill, idx) => (
