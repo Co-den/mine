@@ -183,19 +183,19 @@ export default function Home() {
             {/* Social Icons */}
             <div className="flex gap-4 md:gap-6 justify-center mb-12">
               <a
-                href="#"
+                href="https://github.com/Co-den"
                 className="text-black hover:text-green-500 transition float-animation"
               >
                 <Github size={20} className="md:w-6 md:h-6" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/agugbue-ikenna"
                 className="text-black hover:text-green-500 transition float-animation"
               >
                 <Linkedin size={20} className="md:w-6 md:h-6" />
               </a>
               <a
-                href="#"
+                href="mailto:agugbuenzubechi@gmail.com"
                 className="text-black hover:text-green-500 transition float-animation"
               >
                 <Mail size={20} className="md:w-6 md:h-6" />
@@ -442,7 +442,6 @@ export default function Home() {
                 items: [
                   "JavaScript",
                   "TypeScript",
-                  "Python",
                   "SQL",
                   "HTML/CSS",
                 ],
@@ -450,12 +449,12 @@ export default function Home() {
               {
                 category: "FRAMEWORKS",
                 icon: <Zap size={24} />,
-                items: ["React", "Next.js", "Node.js", "Express", "Firebase"],
+                items: ["React", "Next.js", "Node.js", "Express.js" ],
               },
               {
                 category: "TOOLS & PLATFORMS",
                 icon: <Star size={24} />,
-                items: ["Git", "Docker", "Vercel", "AWS", "MongoDB"],
+                items: ["Git", "Postman", "Vercel", "GitHub", "MongoDB", "Firebase" ,"Supabase"],
               },
             ].map((skillGroup, idx) => (
               <div
@@ -493,7 +492,7 @@ export default function Home() {
                 { skill: "Frontend Development", level: 95 },
                 { skill: "Backend Development", level: 85 },
                 { skill: "Full Stack Architecture", level: 90 },
-                { skill: "DevOps & Deployment", level: 80 },
+                { skill: "Deployment", level: 80 },
               ].map((item, idx) => (
                 <div key={idx}>
                   <div className="flex justify-between mb-2">
@@ -534,10 +533,10 @@ export default function Home() {
 
           <div className="flex flex-col gap-4 mb-8 md:mb-12">
             <a
-              href="mailto:victor@example.com"
+              href="mailto:agugbuenzubechi@gmail.com"
               className="text-base md:text-lg neon-text transition"
             >
-              victor@example.com
+             agugbuenzubechi@gmail.com
             </a>
             <div className="flex gap-4 md:gap-6 justify-center">
               <a
@@ -563,7 +562,7 @@ export default function Home() {
 
           <div className="border-t-2 border-gray-300 pt-6 md:pt-8">
             <p className="text-gray-600 text-xs md:text-sm retro-text">
-              © 2025 Victor Jack. All rights reserved.
+              © 2025 Agugbu Nzubechi. All rights reserved.
             </p>
           </div>
         </div>
