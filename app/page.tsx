@@ -189,7 +189,7 @@ export default function Home() {
                 <Github size={20} className="md:w-6 md:h-6" />
               </a>
               <a
-                href="https://www.linkedin.com/in/agugbue-ikenna"
+                href="https://www.linkedin.com/in/ikenna-agugbue-135455249a"
                 className="text-black hover:text-green-500 transition float-animation"
               >
                 <Linkedin size={20} className="md:w-6 md:h-6" />
@@ -540,19 +540,19 @@ export default function Home() {
             </a>
             <div className="flex gap-4 md:gap-6 justify-center">
               <a
-                href="#"
+                href="https://github.com/Co-den"
                 className="text-black hover:text-green-500 transition float-animation"
               >
                 <Github size={24} className="md:w-8 md:h-8" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/ikenna-agugbue-135455249a"
                 className="text-black hover:text-green-500 transition float-animation"
               >
                 <Linkedin size={24} className="md:w-8 md:h-8" />
               </a>
               <a
-                href="#"
+                href="mailto:agubuenzubechi@gmail.com"
                 className="text-black hover:text-green-500 transition float-animation"
               >
                 <Mail size={24} className="md:w-8 md:h-8" />
