@@ -11,7 +11,9 @@ import {
   Code,
   Zap,
   Database,
-  PhoneIcon
+  Smartphone,
+  Globe,
+  Code2
   
 } from "lucide-react";
 import { useState } from "react";
@@ -236,7 +238,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {[
               {
-                icon: '< >',
+                icon: <Code2 size={24} />,
                 title: "FRONTEND",
                 skills: "React, TypeScript, Next.js, Tailwind CSS",
                 desc: "Building responsive and interactive user interfaces",
@@ -248,13 +250,13 @@ export default function Home() {
                 desc: "Scalable server-side applications and APIs",
               },
               {
-                icon: <PhoneIcon size={24} />,
+                icon: <Smartphone size={24} />,
                 title: "MOBILE APPLICATIONS",
                 skills: "React Native, Expo",
                 desc: "Building cross-platform mobile experiences with native performance",
               },
               {
-                icon: "🌐",
+                icon: <Globe size={24} />,
                 title: "DEPLOYMENT",
                 skills: "Docker, Vercel, CI/CD",
                 desc: "Automated deployment and cloud infrastructure",
