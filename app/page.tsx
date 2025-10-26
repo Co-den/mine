@@ -376,9 +376,9 @@ export default function Home() {
                 demo: "https://chef-assistant.netlify.app/",
               },
               {
-                title: "Analytics Dashboard",
-                tech: "Next.js, Chart.js, PostgreSQL",
-                desc: "Real-time analytics and data visualization platform with custom reporting.",
+                title: " AgriConnect Dashboard",
+                tech: "Next.js, React.js, mongoDB",
+                desc: "AgriConnect is a smart agriculture management platform designed to help farmers, agronomists, and agribusiness owners monitor and manage crop data, weather conditions, field activities, and market insights all in one place.",
                 github: "#",
                 demo: "#",
               },
