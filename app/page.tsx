@@ -149,7 +149,7 @@ export default function Home() {
             <h1 className="retro-title text-2xl md:text-6xl mb-4 tracking-tight">
               PORTFOLIO.EXE
             </h1>
-            <div className="text-gray-500 text-xs md:text-sm mb-6 flex items-center justify-center gap-2 retro-text">
+            <div className="text-gray-900 text-xs md:text-sm mb-6 flex items-center justify-center gap-2 retro-text">
               <span>&gt;</span>
               <span>FULL STACK DEVELOPER</span>
             </div>
@@ -379,8 +379,8 @@ export default function Home() {
                 title: " AgriConnect Dashboard",
                 tech: "Next.js, React.js, mongoDB",
                 desc: "AgriConnect is a smart agriculture management platform designed to help farmers, agronomists, and agribusiness owners monitor and manage crop data, weather conditions, field activities, and market insights all in one place.",
-                github: "#",
-                demo: "#",
+                github: "https://github.com/Co-den/agri-app",
+                demo: "https://agri-app-blush.vercel.app/",
               },
               {
                 title: "Social Media API",
