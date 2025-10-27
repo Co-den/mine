@@ -16,9 +16,7 @@ import {
   Code2,
 } from "lucide-react";
 import { useState } from "react";
-import ContactForm from "./contact";
-
-
+import Contact from "./contact";
 
 export default function Home() {
   const [activeNav, setActiveNav] = useState("home");
@@ -221,6 +219,7 @@ export default function Home() {
           <h2 className="retro-heading text-2xl md:text-6xl mb-8 md:mb-12 text-center">
             ABOUT.TXT
           </h2>
+          <div className="w-24 h-1 bg-green-500 mx-auto mb-8"></div>
           <div className="text-center mb-12 md:mb-16">
             <p className="text-gray-700 leading-relaxed mb-4 text-xs md:text-base retro-text">
               I am a passionate software developer with a love for creating
@@ -308,6 +307,7 @@ export default function Home() {
           <h2 className="retro-heading text-2xl md:text-6xl mb-8 md:mb-12 text-center">
             EXPERIENCE.LOG
           </h2>
+          <div className="w-24 h-1 bg-green-500 mx-auto mb-8"></div>
           <p className="text-center text-gray-700 mb-8 md:mb-12 leading-relaxed text-xs md:text-base retro-text">
             My professional journey through the tech industry, working with
             innovative companies and delivering impactful solutions.
@@ -362,7 +362,7 @@ export default function Home() {
           <h2 className="retro-heading text-2xl md:text-6xl mb-8 md:mb-12 text-center">
             PROJECTS.DIR
           </h2>
-
+           <div className="w-24 h-1 bg-green-500 mx-auto mb-8"></div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
             {[
               {
@@ -437,7 +437,7 @@ export default function Home() {
           <h2 className="retro-heading text-2xl md:text-6xl mb-8 md:mb-12 text-center">
             SKILLS.SYS
           </h2>
-
+          <div className="w-24 h-1 bg-green-500 mx-auto mb-8"></div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {[
               {
@@ -527,48 +527,19 @@ export default function Home() {
         id="contact"
         className="min-h-screen flex items-center justify-center px-4 md:px-6 py-20"
       >
-        <div className="max-w-2xl w-full">
-          <h2 className="retro-heading text-2xl md:text-6xl mb-6 md:mb-8 text-center">
-            CONTACT.ME
-          </h2>
-          <p className="text-gray-700 mb-8 md:mb-12 leading-relaxed text-xs md:text-base retro-text text-center">
-            Have a project in mind or want to collaborate? Send a message — I
-            usually respond within 48 hours.
-          </p>
-
-          <form
-            onSubmit={async (e) => {
-              e.preventDefault();
-            }}
-            className="bg-white border-2 border-gray-200 p-6 md:p-8 rounded-md"
-            aria-labelledby="contact-heading"
-          >
-            {/* client-side form state & handler */}
-            {/* use inline handlers to avoid adding imports */}
-            <script
-              // Note: using a script tag here only to indicate behavior in file diff.
-              type="text/plain"
-            />
-
-            {/* Form UI (managed by React state) */}
-            {/* Replace with React-managed form below */}
-            <div id="contact-form-wrapper" />
-          </form>
-
-          {/* React-managed contact form — keeps client behavior inside the component */}
-          <div className="mt-6">
-            {/* Form component */}
-            <ContactForm />
-          </div>
-        </div>
+        <Contact />
       </section>
 
       {/* Professional Footer */}
       <footer className="bg-black text-white mt-12">
         <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-sm md:text-base font-mono">
-            <div className="font-bold uppercase retro-heading">PORTFOLIO.EXE</div>
-            <div className="text-gray-400 text-xs mt-1">Agugbue Nzubechi • Full Stack Developer</div>
+            <div className="font-bold uppercase retro-heading">
+              PORTFOLIO.EXE
+            </div>
+            <div className="text-gray-400 text-xs mt-1">
+              Agugbue Nzubechi • Full Stack Developer
+            </div>
           </div>
 
           <nav className="flex gap-4">
@@ -589,7 +560,9 @@ export default function Home() {
               className="text-gray-300 hover:text-white text-xs flex items-center gap-2"
             >
               <Mail size={16} />
-              <span className="hidden md:inline">agugbuenzubechi@gmail.com</span>
+              <span className="hidden md:inline">
+                agugbuenzubechi@gmail.com
+              </span>
             </a>
 
             <a
@@ -611,12 +584,11 @@ export default function Home() {
 
         <div className="border-t border-gray-800 mt-0">
           <div className="max-w-6xl mx-auto px-4 md:px-6 py-4 text-center text-xs text-gray-500">
-            © {new Date().getFullYear()} Agugbue Nzubechi. All rights reserved. • Built with React / Next.js
+            © {new Date().getFullYear()} Agugbue Nzubechi. All rights reserved.
+            • Built with React / Next.js
           </div>
         </div>
       </footer>
-
-     </div>
-   );
- }
-
+    </div>
+  );
+}
