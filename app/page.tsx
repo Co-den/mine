@@ -149,7 +149,7 @@ export default function Home() {
             <h1 className="retro-title text-2xl md:text-6xl mb-4 tracking-tight">
               PORTFOLIO.EXE
             </h1>
-            <div className="text-gray-900 text-xs md:text-sm mb-6 flex items-center justify-center gap-2 retro-text">
+            <div className="text-gray-500 text-xs md:text-sm mb-6 flex items-center justify-center gap-2 retro-text">
               <span>&gt;</span>
               <span>FULL STACK DEVELOPER</span>
             </div>
@@ -296,7 +296,7 @@ export default function Home() {
       </section>
 
       {/* Experience Section */}
-      <section
+      {/** <section
         id="experience"
         className="min-h-screen flex items-center justify-center px-4 md:px-6 py-20"
       >
@@ -347,7 +347,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Projects Section */}
       <section
@@ -383,11 +383,11 @@ export default function Home() {
                 demo: "https://agri-app-blush.vercel.app/",
               },
               {
-                title: "Social Media API",
-                tech: "Node.js, Express, MongoDB",
-                desc: "RESTful API for social networking application with authentication and real-time features.",
-                github: "#",
-                demo: "#",
+                title: "Auth System",
+                tech: "React, Express, MongoDB",
+                desc: "Full User Authentication system with JWT, email verification, and password reset functionality.",
+                github: "https://github.com/Co-den/authentication-",
+                demo: "https://authenticationb.netlify.app/",
               },
             ].map((project, idx) => (
               <div
