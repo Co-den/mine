@@ -78,7 +78,7 @@ export default function Home() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex gap-8 text-xs md:text-sm items-center">
-            {["home", "about", "experience", "projects", "contact"].map(
+            {["home", "about", "projects", "contact"].map(
               (item) => (
                 <button
                   key={item}
@@ -112,7 +112,7 @@ export default function Home() {
         {mobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-200">
             <div className="flex flex-col px-4 py-2 max-h-96 overflow-y-auto">
-              {["home", "about", "experience", "projects", "contact"].map(
+              {["home", "about", "projects", "contact"].map(
                 (item) => (
                   <button
                     key={item}
