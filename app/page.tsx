@@ -13,10 +13,12 @@ import {
   Database,
   Smartphone,
   Globe,
-  Code2
-  
+  Code2,
 } from "lucide-react";
 import { useState } from "react";
+import ContactForm from "./contact";
+
+
 
 export default function Home() {
   const [activeNav, setActiveNav] = useState("home");
@@ -240,13 +242,15 @@ export default function Home() {
               {
                 icon: <Code2 size={24} />,
                 title: "FRONTEND",
-                skills: "React, TypeScript, Next.js, Tailwind CSS, Redux, Zustand",
+                skills:
+                  "React, TypeScript, Next.js, Tailwind CSS, Redux, Zustand",
                 desc: "Building responsive and interactive user interfaces",
               },
               {
                 icon: <Database size={24} />,
                 title: "BACKEND",
-                skills: "Node.js, Express.js, MongoDB, MySQL, RESTful APIs, Firebase, Supabase",
+                skills:
+                  "Node.js, Express.js, MongoDB, MySQL, RESTful APIs, Firebase, Supabase",
                 desc: "Scalable server-side applications and APIs",
               },
               {
@@ -439,22 +443,25 @@ export default function Home() {
               {
                 category: "LANGUAGES",
                 icon: <Code size={24} />,
-                items: [
-                  "JavaScript",
-                  "TypeScript",
-                  "SQL",
-                  "HTML/CSS",
-                ],
+                items: ["JavaScript", "TypeScript", "SQL", "HTML/CSS"],
               },
               {
                 category: "FRAMEWORKS",
                 icon: <Zap size={24} />,
-                items: ["React", "Next.js", "Node.js", "Express.js" ],
+                items: ["React", "Next.js", "Node.js", "Express.js"],
               },
               {
                 category: "TOOLS & PLATFORMS",
                 icon: <Star size={24} />,
-                items: ["Git", "Postman", "Vercel", "GitHub", "MongoDB", "Firebase" ,"Supabase"],
+                items: [
+                  "Git",
+                  "Postman",
+                  "Vercel",
+                  "GitHub",
+                  "MongoDB",
+                  "Firebase",
+                  "Supabase",
+                ],
               },
             ].map((skillGroup, idx) => (
               <div
@@ -481,7 +488,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-
           {/* Proficiency Matrix */}
           <div className="mt-12 border-2 border-gray-300 p-6 retro-border-green">
             <h3 className="font-bold text-base md:text-lg mb-6 uppercase tracking-wider retro-heading">
@@ -521,52 +527,96 @@ export default function Home() {
         id="contact"
         className="min-h-screen flex items-center justify-center px-4 md:px-6 py-20"
       >
-        <div className="max-w-2xl w-full text-center">
-          <h2 className="retro-heading text-2xl md:text-6xl mb-6 md:mb-8">
+        <div className="max-w-2xl w-full">
+          <h2 className="retro-heading text-2xl md:text-6xl mb-6 md:mb-8 text-center">
             CONTACT.ME
           </h2>
-          <p className="text-gray-700 mb-8 md:mb-12 leading-relaxed text-xs md:text-base retro-text">
-            Have a project in mind or want to collaborate? Feel free to reach
-            out. I'm always interested in hearing about new opportunities and
-            ideas.
+          <p className="text-gray-700 mb-8 md:mb-12 leading-relaxed text-xs md:text-base retro-text text-center">
+            Have a project in mind or want to collaborate? Send a message — I
+            usually respond within 48 hours.
           </p>
 
-          <div className="flex flex-col gap-4 mb-8 md:mb-12">
-            <a
-              href="mailto:agugbuenzubechi@gmail.com"
-              className="text-base md:text-lg neon-text transition"
-            >
-             agugbuenzubechi@gmail.com
-            </a>
-            <div className="flex gap-4 md:gap-6 justify-center">
-              <a
-                href="https://github.com/Co-den"
-                className="text-black hover:text-green-500 transition float-animation"
-              >
-                <Github size={24} className="md:w-8 md:h-8" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/ikenna-agugbue-135455249a"
-                className="text-black hover:text-green-500 transition float-animation"
-              >
-                <Linkedin size={24} className="md:w-8 md:h-8" />
-              </a>
-              <a
-                href="mailto:agubuenzubechi@gmail.com"
-                className="text-black hover:text-green-500 transition float-animation"
-              >
-                <Mail size={24} className="md:w-8 md:h-8" />
-              </a>
-            </div>
-          </div>
+          <form
+            onSubmit={async (e) => {
+              e.preventDefault();
+            }}
+            className="bg-white border-2 border-gray-200 p-6 md:p-8 rounded-md"
+            aria-labelledby="contact-heading"
+          >
+            {/* client-side form state & handler */}
+            {/* use inline handlers to avoid adding imports */}
+            <script
+              // Note: using a script tag here only to indicate behavior in file diff.
+              type="text/plain"
+            />
 
-          <div className="border-t-2 border-gray-300 pt-6 md:pt-8">
-            <p className="text-gray-600 text-xs md:text-sm retro-text">
-              © 2025 Agugbue Nzubechi. All rights reserved.
-            </p>
+            {/* Form UI (managed by React state) */}
+            {/* Replace with React-managed form below */}
+            <div id="contact-form-wrapper" />
+          </form>
+
+          {/* React-managed contact form — keeps client behavior inside the component */}
+          <div className="mt-6">
+            {/* Form component */}
+            <ContactForm />
           </div>
         </div>
       </section>
-    </div>
-  );
-}
+
+      {/* Professional Footer */}
+      <footer className="bg-black text-white mt-12">
+        <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="text-sm md:text-base font-mono">
+            <div className="font-bold uppercase retro-heading">PORTFOLIO.EXE</div>
+            <div className="text-gray-400 text-xs mt-1">Agugbue Nzubechi • Full Stack Developer</div>
+          </div>
+
+          <nav className="flex gap-4">
+            {["home", "about", "projects", "skills", "contact"].map((item) => (
+              <button
+                key={item}
+                onClick={() => scrollToSection(item)}
+                className="text-gray-300 hover:text-white text-xs uppercase tracking-wider"
+              >
+                {item}
+              </button>
+            ))}
+          </nav>
+
+          <div className="flex items-center gap-4">
+            <a
+              href="mailto:agugbuenzubechi@gmail.com"
+              className="text-gray-300 hover:text-white text-xs flex items-center gap-2"
+            >
+              <Mail size={16} />
+              <span className="hidden md:inline">agugbuenzubechi@gmail.com</span>
+            </a>
+
+            <a
+              href="https://github.com/Co-den"
+              className="text-gray-300 hover:text-white"
+              aria-label="GitHub"
+            >
+              <Github size={18} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ikenna-agugbue-135455249a"
+              className="text-gray-300 hover:text-white"
+              aria-label="LinkedIn"
+            >
+              <Linkedin size={18} />
+            </a>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-800 mt-0">
+          <div className="max-w-6xl mx-auto px-4 md:px-6 py-4 text-center text-xs text-gray-500">
+            © {new Date().getFullYear()} Agugbue Nzubechi. All rights reserved. • Built with React / Next.js
+          </div>
+        </div>
+      </footer>
+
+     </div>
+   );
+ }
+
